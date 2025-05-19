@@ -1,0 +1,276 @@
+[
+  {
+    "id": "route1",
+    "name": "Saddar to Islamabad Airport",
+    "origin": {
+      "name": "Saddar, Rawalpindi",
+      "coordinates": {
+        "latitude": 33.5951,
+        "longitude": 73.0538
+      }
+    },
+    "destination": {
+      "name": "Islamabad International Airport",
+      "coordinates": {
+        "latitude": 33.5561,
+        "longitude": 72.851
+      }
+    },
+    "duration": 75,
+    "distance": 35000,
+    "fare": 150,
+    "steps": [
+      {
+        "id": "step1",
+        "description": "Walk to Saddar Bus Stop",
+        "type": "walk",
+        "duration": 5,
+        "distance": 400,
+        "startLocation": {
+          "name": "Saddar",
+          "coordinates": {
+            "latitude": 33.5951,
+            "longitude": 73.0538
+          }
+        },
+        "endLocation": {
+          "name": "Saddar Bus Stop",
+          "coordinates": {
+            "latitude": 33.5945,
+            "longitude": 73.0532
+          }
+        }
+      },
+      {
+        "id": "step2",
+        "description": "Take Metro Bus to IJP Road",
+        "type": "bus",
+        "busNumber": "M1",
+        "busName": "Metro Bus",
+        "duration": 25,
+        "distance": 12000,
+        "startLocation": {
+          "name": "Saddar Bus Stop",
+          "coordinates": {
+            "latitude": 33.5945,
+            "longitude": 73.0532
+          }
+        },
+        "endLocation": {
+          "name": "IJP Road Station",
+          "coordinates": {
+            "latitude": 33.6423,
+            "longitude": 73.0751
+          }
+        }
+      },
+      {
+        "id": "step3",
+        "description": "Wait for Airport Shuttle",
+        "type": "wait",
+        "duration": 10
+      },
+      {
+        "id": "step4",
+        "description": "Take Airport Shuttle to Islamabad Airport",
+        "type": "bus",
+        "busNumber": "A1",
+        "busName": "Airport Shuttle",
+        "duration": 35,
+        "distance": 22600,
+        "startLocation": {
+          "name": "IJP Road Station",
+          "coordinates": {
+            "latitude": 33.6423,
+            "longitude": 73.0751
+          }
+        },
+        "endLocation": {
+          "name": "Islamabad International Airport",
+          "coordinates": {
+            "latitude": 33.5561,
+            "longitude": 72.851
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "route2",
+    "name": "Blue Area to Bahria Town",
+    "origin": {
+      "name": "Blue Area, Islamabad",
+      "coordinates": {
+        "latitude": 33.7294,
+        "longitude": 73.0931
+      }
+    },
+    "destination": {
+      "name": "Bahria Town, Rawalpindi",
+      "coordinates": {
+        "latitude": 33.5014,
+        "longitude": 73.0815
+      }
+    },
+    "duration": 60,
+    "distance": 28000,
+    "fare": 120,
+    "steps": [
+      {
+        "id": "step1",
+        "description": "Walk to Jinnah Avenue Bus Stop",
+        "type": "walk",
+        "duration": 7,
+        "distance": 550,
+        "startLocation": {
+          "name": "Blue Area",
+          "coordinates": {
+            "latitude": 33.7294,
+            "longitude": 73.0931
+          }
+        },
+        "endLocation": {
+          "name": "Jinnah Avenue Bus Stop",
+          "coordinates": {
+            "latitude": 33.728,
+            "longitude": 73.092
+          }
+        }
+      },
+      {
+        "id": "step2",
+        "description": "Take Rawalpindi Express to Faizabad",
+        "type": "bus",
+        "busNumber": "R1",
+        "busName": "Rawalpindi Express",
+        "duration": 20,
+        "distance": 10000,
+        "startLocation": {
+          "name": "Jinnah Avenue Bus Stop",
+          "coordinates": {
+            "latitude": 33.728,
+            "longitude": 73.092
+          }
+        },
+        "endLocation": {
+          "name": "Faizabad Interchange",
+          "coordinates": {
+            "latitude": 33.6608,
+            "longitude": 73.0763
+          }
+        }
+      },
+      {
+        "id": "step3",
+        "description": "Take Bahria Shuttle to Bahria Town",
+        "type": "bus",
+        "busNumber": "B7",
+        "busName": "Bahria Shuttle",
+        "duration": 33,
+        "distance": 17450,
+        "startLocation": {
+          "name": "Faizabad Interchange",
+          "coordinates": {
+            "latitude": 33.6608,
+            "longitude": 73.0763
+          }
+        },
+        "endLocation": {
+          "name": "Bahria Town",
+          "coordinates": {
+            "latitude": 33.5014,
+            "longitude": 73.0815
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "route3",
+    "name": "F-10 Markaz to Rawalpindi Railway Station",
+    "origin": {
+      "name": "F-10 Markaz, Islamabad",
+      "coordinates": {
+        "latitude": 33.695,
+        "longitude": 73.0118
+      }
+    },
+    "destination": {
+      "name": "Rawalpindi Railway Station",
+      "coordinates": {
+        "latitude": 33.5977,
+        "longitude": 73.0751
+      }
+    },
+    "duration": 55,
+    "distance": 22000,
+    "fare": 100,
+    "steps": [
+      {
+        "id": "step1",
+        "description": "Walk to F-10 Bus Terminal",
+        "type": "walk",
+        "duration": 8,
+        "distance": 600,
+        "startLocation": {
+          "name": "F-10 Markaz",
+          "coordinates": {
+            "latitude": 33.695,
+            "longitude": 73.0118
+          }
+        },
+        "endLocation": {
+          "name": "F-10 Bus Terminal",
+          "coordinates": {
+            "latitude": 33.6935,
+            "longitude": 73.011
+          }
+        }
+      },
+      {
+        "id": "step2",
+        "description": "Take Pindi Express to Saddar",
+        "type": "bus",
+        "busNumber": "P2",
+        "busName": "Pindi Express",
+        "duration": 40,
+        "distance": 20000,
+        "startLocation": {
+          "name": "F-10 Bus Terminal",
+          "coordinates": {
+            "latitude": 33.6935,
+            "longitude": 73.011
+          }
+        },
+        "endLocation": {
+          "name": "Saddar Bus Terminal",
+          "coordinates": {
+            "latitude": 33.5951,
+            "longitude": 73.0538
+          }
+        }
+      },
+      {
+        "id": "step3",
+        "description": "Walk to Rawalpindi Railway Station",
+        "type": "walk",
+        "duration": 7,
+        "distance": 1400,
+        "startLocation": {
+          "name": "Saddar Bus Terminal",
+          "coordinates": {
+            "latitude": 33.5951,
+            "longitude": 73.0538
+          }
+        },
+        "endLocation": {
+          "name": "Rawalpindi Railway Station",
+          "coordinates": {
+            "latitude": 33.5977,
+            "longitude": 73.0751
+          }
+        }
+      }
+    ]
+  }
+]
