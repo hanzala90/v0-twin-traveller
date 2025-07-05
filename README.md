@@ -10,7 +10,6 @@ Project is live at:
 **[https://vercel.com/hanzala-ahmads-projects/v0-twin-traveller](https://vercel.com/hanzala-ahmads-projects/v0-twin-traveller)**
 
 
-**[https://v0.dev/chat/projects/5ecCHAcL9bn](https://v0.dev/chat/projects/5ecCHAcL9bn)**
 
 ## How It Works
 
